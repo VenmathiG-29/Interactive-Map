@@ -1,0 +1,478 @@
+[
+  {
+    "link": "01.simple-map",
+    "text": "simple map",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "02.changing-locate-zoom-control",
+    "text": "changing locate zoom control",
+    "position": "--pos-right: 10px, --pos-bottom: 25px"
+  },
+  {
+    "link": "03.adding-one-marker",
+    "text": "adding one marker",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "04.many-markers",
+    "text": "many markers",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "05.coordinates-after-clicking-on-the-map",
+    "text": "coordinates after clicking on the map",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "06.coordinates-of-the-visible-map",
+    "text": "coordinates of the visible map",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "07.image-instead-of-map",
+    "text": "image instead of map",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "08.controlling-different-groups-of-markers",
+    "text": "controlling different groups of markers",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "09.marker-grouping-markercluster-plugin",
+    "text": "marker grouping markercluster plugin",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "10.matching-all-markers-to-the-map-view",
+    "text": "matching all markers to the map view",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "11.controlling-the-map-from-outside-the-map",
+    "text": "controlling the map from outside the map",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "12.controling-polygons",
+    "text": "controling polygons",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "13.svg-markers-width-legends",
+    "text": "svg markers width legends",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "14.dragable-markers",
+    "text": "dragable markers",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "15.geoJson-simple",
+    "text": "geoJson simple",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "16.geoJson-extended-action",
+    "text": "geoJson extended action",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "17.TileLayer",
+    "text": "tileLayer",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "18.add-move-and-delete-marker",
+    "text": "add move and delete marker",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "19.custom-button",
+    "text": "custom button",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "20.maxBound-map-restricts-the-view",
+    "text": "maxBound map restricts the view",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "21.geocoding-addresses-search-engine-outside-the-map",
+    "text": "geocoding addresses search engine outside the map",
+    "info": "<a href='https://github.com/tomickigrzegorz/autocomplete' target='_blank'>the example uses the autocomplete</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "22.center-map-when-click-marker",
+    "text": "center map when click marker",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "23.custom-marker-and-popup",
+    "text": "custom marker and popup",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "24.polyline",
+    "text": "polyline",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "25.fitBounds-with-padding",
+    "text": "fitBounds with padding",
+    "info": "Grab the bottom right corner and change the size of the frame or change the window size",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "26.markers-60K",
+    "text": "markers 60K",
+    "info": "60 thousand markers. For better optimization change the map to canvas + use markerCluster plugin + and change the marker to circleMarker (canvas)",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "27.fullscreen",
+    "text": "fullscreen",
+    "info": "<a href='https://github.com/Leaflet/Leaflet.fullscreen' target='_blank'>the example uses the fullscreen plugin</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "28.adding-map-description",
+    "text": "adding map description",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "29.linked-view",
+    "text": "linked view",
+    "position": "--pos-left: 10px, --pos-bottom: 10px",
+    "style": true
+  },
+  {
+    "link": "30.mini-map",
+    "text": "miniMap plugin",
+    "info": "<a href='https://github.com/Norkart/Leaflet-MiniMap' target='_blank'>the example uses the minimap plugin</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "31.Leaflet.awesome-markers",
+    "text": "awesome markers plugin",
+    "info": "<a href='https://github.com/lvoogdt/Leaflet.awesome-markers' target='_blank'>the example uses the awesome-markers plugin</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "32.image-icons-prev-next",
+    "text": "image icons prev next",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "33.location",
+    "text": "location",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "34.multiple-tile-layers",
+    "text": "multiple tile layers",
+    "position": "--pos-right: 10px, --pos-bottom: 25px"
+  },
+  {
+    "link": "35.marker-draggable-on-a-click",
+    "text": "marker draggable on a click",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "36.story-maps-IntersectionObserver",
+    "text": "story map with IntersectionObserver",
+    "info": "All texts and photos come from <a href='https://warsawtour.pl/warszawa-w-3-dni/' target='_blank'>warsawtour.pl</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "37.enlarge-a-polygon-box-by-5-percent",
+    "text": "enlarge a polygon box by 5% [turfjs]",
+    "info": "Advanced geospatial analysis for browsers and Node.js <a href='https://turfjs.org/' target='_blank'>turfjs</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "38.part-of-the-common",
+    "text": "part of the common [turfjs]",
+    "info": "Advanced geospatial analysis for browsers and Node.js <a href='https://turfjs.org/' target='_blank'>turfjs</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "39.coordinates-of-the-center-of-the-visible-map",
+    "text": "coordinates of the center of the visible map",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "40.distance-between-cities-on-map",
+    "text": "distance between cities on map",
+    "info": "<a href='https://github.com/tomickigrzegorz/autocomplete' target='_blank'>the example uses the autocomplete</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "41.back-to-home-button",
+    "text": "back to home button",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "42.scale",
+    "text": "scale",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "43.image-on-map",
+    "text": "image on map",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "44.data-on-sidebar",
+    "text": "data on sidebar",
+    "position": "--pos-left: 10px, --pos-bottom: 10px",
+    "style": true
+  },
+  {
+    "link": "45.multi-layer-search",
+    "text": "multi layer search",
+    "info": "<a href='https://github.com/tomickigrzegorz/autocomplete' target='_blank'>the example uses the autocomplete</a>",
+    "position": "--pos-right: 20px, --pos-top: 150px",
+    "style": true
+  },
+  {
+    "link": "46.checking-if-the-marker-is-in-viewport",
+    "text": "checking if the marker is in viewport",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "47.random-marker-in-map-bounds",
+    "text": "random marker in map bounds",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "48.tiles-gray",
+    "text": "tiles gray",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "49.location-button",
+    "text": "location button",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "50.autocomplete-on-map-button",
+    "text": "autocomplete on map - button",
+    "info": "<a href='https://github.com/tomickigrzegorz/autocomplete' target='_blank'>the example uses the autocomplete</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "51.tabs-in-popup",
+    "text": "tabs in popup",
+    "info": "<a href='http://github.com/cferdinandi/tabby' target='_blank'>the example uses the tabby plugin</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "52.full-project",
+    "text": "store plan - full project",
+    "info": "This is an example combining OSM maps with the L.imageOverlay. It's okay, and it would be even better if it was just a picture without a map for efficiency reasons, as in example 7",
+    "position": "--pos-left: 10px, --pos-bottom: 10px",
+    "style": true
+  },
+  {
+    "link": "53.create-and-save-geojson",
+    "text": "create and save geojson",
+    "info": "This is an example of creating a geojson file from a map based on <a href='https://leaflet.github.io/Leaflet.draw/docs/leaflet-draw-latest.html' target='_blank'>leaflet.draw plugin</a>. First you need to draw all the objects and then export it using the button in the upper right corner. You can also save or delete data in localstorage. This is a poorer version of this site - <a href='https://geojson.io/' target='_blank'>geojson.io</a> ;). This plugin was used to create an example - <i>store plan - full project</i>",
+    "position": "--pos-right: 10px, --pos-bottom: 25px",
+    "style": true
+  },
+  {
+    "link": "54.contextmenu",
+    "text": "contextmenu",
+    "info": "About contextmenu on <a href='https://developer.mozilla.org/en-US/docs/Web/API/Element/contextmenu_event' target='_blank'>MDN Web Docs</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "55.follow-mouse",
+    "text": "follow mouse",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "56.sidebar",
+    "text": "sidebar",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "57.create-additional-control-placeholders",
+    "text": "create additional control placeholders",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "58.control-layers-outside-the-map",
+    "text": "control layers outside the map",
+    "info": "In this example, we have three data layers (3 separate files). We control the visibility of layers from the external div not from the map.",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "59.sidebar-replacing-popup",
+    "text": "sidebar replacing popup",
+    "info": "All texts and photos come from <a href='https://warsawtour.pl/warszawa-w-3-dni/' target='_blank'>warsawtour.pl</a>",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "60.great-circle",
+    "text": "great circle [turfjs]",
+    "info": "This example is based on the plugin <a href='https://www.npmjs.com/package/@turf/great-circle' target='_blank'>@turf/great-circle</a>. You can also use the <a href='https://www.npmjs.com/package/@elfalem/leaflet-curve' target='_blank'>leaflet-curve</a> package",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "61.bind-more-popups-to-the-same-marker",
+    "text": "bind more popups to the same marker",
+    "info": "This example shows how to insert a lot of information from the same place in one popup without using the markercluster plugin",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "62.count-markers",
+    "text": "count markers",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "63.leaflet-routing-machine",
+    "text": "leaflet routing machine",
+    "info": "You are using OSRM's demo server. Please note that it is <strong>**NOT SUITABLE FOR PRODUCTION USE**</strong>.<br>Refer to the demo server's usage policy: https://github.com/Project-OSRM/osrm-backend/wiki/Api-usage-policy<br><br>To change, set the serviceUrl option.<br><br>Please do not report issues with this server to neither Leaflet Routing Machine or OSRM - it's for demo only, and will sometimes not be available, or work in unexpected ways.<br><br>Please set up your own OSRM server, or use a paid service provider for production.<br><br>You can find more examples of using this library at <a href='https://www.liedman.net/leaflet-routing-machine/' target='_blank'>leaflet-routing-machine</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 80px",
+    "style": true
+  },
+  {
+    "link": "64.autocomplete-with-geojson",
+    "text": "autocomplete with geojson",
+    "info": "<a href='https://github.com/tomickigrzegorz/autocomplete' target='_blank'>the example uses the autocomplete</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 80px",
+    "style": true
+  },
+  {
+    "link": "65.marker-slide-to",
+    "text": "marker slide to",
+    "info": "<a href='https://www.npmjs.com/package/leaflet.marker.slideto' target='_blank'>the example uses the plugin Leaflet.Marker.SlideTo</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 80px"
+  },
+  {
+    "link": "66.leaflet-geoman",
+    "text": "leaflet-geoman",
+    "info": "<a href='https://geoman.io' target='_blank'>Leaflet-Geoman - the best geometry editing for Leaflet Maps</a>",
+    "position": "--pos-right: 10px, --pos-bottom: 80px"
+  },
+  {
+    "link": "67.add-data-attribute-to-marker",
+    "text": "add data attribute to the marker",
+    "info": "open devtools and check that we have added two \"data-attribute\" elements to the marker <i>[data-first-example=\"First example\", data-second-example=\"Second example\"]</i>",
+    "position": "--pos-right: 10px, --pos-bottom: 80px"
+  },
+  {
+    "link": "68.popup-in-a-fixed-position",
+    "text": "popup in a fixed position",
+    "info": "Resize the map (<= 700px) to see how the position of the popup and the behavior of the map change.",
+    "position": "--pos-right: 10px, --pos-bottom: 80px",
+    "style": true
+  },
+  {
+    "link": "69.simple-jump-marker",
+    "text": "simple animation of jumping marker",
+    "info": "See style.css from this example",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "70.polygon-with-gradien",
+    "text": "how to create a polygon with a gradient",
+    "info": "Create simple plugin to create a polygon with a gradient",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "71.text-below-a-marker",
+    "text": "add text below a marker",
+    "info": "Example based on: <a href='https://stackoverflow.com/questions/59419337/how-to-add-text-below-a-marker-in-leaflet' target='_blank'>How to add text below a marker in leaflet?</a>, of course, also take a look at the styles",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "style": true
+  },
+  {
+    "link": "72.add-rectangle-over-click-tiles",
+    "text": "add rectangle over click tiles",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "73.change-tile-style-when-click",
+    "text": "change tile style when click",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "74.open-popup-markercluster-from-outside",
+    "text": "Open popup markercluster from outside",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "75.dynamic-data-on-sidebar",
+    "text": "Dynamic data on sidebar",
+    "position": "--pos-right: 10px, --pos-top: 10px"
+  },
+  {
+    "link": "76.move-marker",
+    "text": "move marker",
+    "position": "--pos-right: 10px, --pos-bottom: 10px",
+    "info": "Move marker by buttons or presing a keybord arrows"
+  },
+  {
+    "link": "77.arrow-marked-lines",
+    "text": "arrow marked lines",
+    "position": "--pos-right: 10px, --pos-bottom: 10px"
+  },
+  {
+    "link": "78.calculate-area",
+    "text": "Calculate area",
+    "position": "--pos-right: 10px, --pos-bottom: 10px"
+  },
+  {
+    "link": "79.draw-dinamic-circles-between-two-points",
+    "text": "Draw dinamic circles marker between two points",
+    "position": "--pos-right: 10px, --pos-top: 10px",
+    "info": "Move markers to see changes."
+  },
+  {
+    "link": "80.many-markers-with-web-worker-1000000",
+    "text": "Many markers (100k) with Web Worker",
+    "position": "--pos-right: 10px, --pos-top: 70px",
+    "info": "This project demonstrates a highly efficient way to display a huge number (100,000) of markers on an interactive Leaflet map. The key to performance is the combination of several modern web technologies.<br><br><b>Core Technologies:</b><br><br><ol class='number'><li><b>Leaflet.js</b>: A library for creating maps.</li><li><b>Web Worker</b>: A script that runs in a separate background thread. This prevents the user interface (the map) from being blocked during heavy computations.</li><li><b>IndexedDB</b>: A database in the browser. It is used to store markers once they are downloaded, so they don't need to be fetched again on subsequent visits.</li><li><b>RBush</b>: A library for creating a spatial index (R-tree). It allows for lightning-fast searching of points within a specific geographic area.</li><li><b>Leaflet.markercluster</b>: A plugin for grouping (clustering) markers that are close to each other, which improves map readability.</li></ol><br><b>How It Works:</b><br><br><ol class='number'><li><b>Initialization</b>: After the page loads, the user sees a map and buttons to load/clear data.</li><li><b>Loading Data (+)</b>: <ul class='circle'><li>When the `+` button is clicked, the script first tries to load marker data from <b>IndexedDB</b>.</li><li>If the database is empty (first run), it fetches the large `100000-markers.json` file from the server.</li><li>The downloaded data is saved to IndexedDB so that it is immediately available the next time the page is opened.</li></ul></li><li><b>Passing to Web Worker</b>: <ul class='circle'><li>The entire array of 100,000 markers is sent to the <b>Web Worker</b> (`showMarkerWorker.js`).</li><li>The worker uses the <b>RBush</b> library to build a spatial index for all the points. This process happens in the background and does not slow down the map.</li></ul></li><li><b>Filtering and Displaying</b>: <ul class='circle'><li>When the user pans or zooms the map, the main script (`script.js`) gets the coordinates of the currently visible area.</li><li>These coordinates are sent to the Web Worker with the `filter` command.</li><li>The worker, using the super-fast RBush index, instantly finds <b>only those markers that are within the visible area</b>.</li><li>The list of filtered markers is sent back to the main script.</li></ul></li><li><b>Updating the Map</b>: <ul class='circle'><li>The main script clears the previous markers and adds the new, filtered batch to the <b>markerClusterGroup</b> layer.</li><li>This plugin automatically groups densely located markers into clusters (e.g., a circle with a number), which makes the map readable even when zoomed out.</li></ul></li></ol><br><b>Summary:</b><br>By offloading the filtering of 100,000 points to a Web Worker and using an optimized data structure (R-tree), the application can smoothly handle huge geographic datasets without freezing the interface. The use of IndexedDB further optimizes loading times for subsequent sessions.<br><br>PS. in the folder there is also a file generateMarkersForTesting.js As the name suggests it generates markers, you just need to run it through the node <code>generateMarkersForTesting.js</code>",
+    "extend": ["generateMarkersForTesting.js", "showMarkerWorker.js"]
+  }
+]
