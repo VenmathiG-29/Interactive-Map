@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /**
- * create additional control placeholders
+ * control layers outside the map
  */
 
 // config map
@@ -24,49 +24,107 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-// --------------------------------------------------------------
-// Create additional Control placeholders
-// stackoverflow.com/a/33621034/10424385
+// ------------------------------------------------------------
 
-(function addControlPlaceholders(map) {
-  let corners = map._controlCorners;
-  let l = "leaflet-";
-  let container = map._controlContainer;
+// async function to load geojson
+async function fetchData(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-  function createCorner(vSide, hSide) {
-    let className = l + vSide + " " + l + hSide;
-    corners[vSide + hSide] = L.DomUtil.create("div", className, container);
+// fetching data from geojson
+const poiLayers = L.layerGroup().addTo(map);
+
+// center map on the clicked marker
+function clickZoom(e) {
+  map.setView(e.target.getLatLng(), zoom);
+}
+
+let geojsonOpts = {
+  pointToLayer: function (feature, latlng) {
+    return L.marker(latlng, {
+      icon: L.divIcon({
+        className: feature.properties.amenity,
+        iconSize: L.point(16, 16),
+        html: feature.properties.amenity[0].toUpperCase(),
+        popupAnchor: [3, -5],
+      }),
+    })
+      .bindPopup(
+        feature.properties.amenity +
+          "<br><b>" +
+          feature.properties.name +
+          "</b>"
+      )
+      .on("click", clickZoom);
+  },
+};
+
+const layersContainer = document.querySelector(".layers");
+
+const layersButton = "all layers";
+
+function generateButton(name) {
+  const id = name === layersButton ? "all-layers" : name;
+
+  const templateLayer = `
+    <li class="layer-element">
+      <label for="${id}">
+        <input type="checkbox" id="${id}" name="item" class="item" value="${name}" checked>
+        <span>${name}</span>
+      </label>
+    </li>
+  `;
+
+  layersContainer.insertAdjacentHTML("beforeend", templateLayer);
+}
+
+generateButton(layersButton);
+
+// add data to geoJSON layer and add to LayerGroup
+const arrayLayers = ["bar", "pharmacy", "restaurant"];
+
+arrayLayers.map((json) => {
+  generateButton(json);
+  fetchData(`./data/${json}.json`).then((data) => {
+    window["layer_" + json] = L.geoJSON(data, geojsonOpts).addTo(map);
+  });
+});
+
+document.addEventListener("click", (e) => {
+  const target = e.target;
+
+  const itemInput = target.closest(".item");
+
+  if (!itemInput) return;
+
+  showHideLayer(target);
+});
+
+function showHideLayer(target) {
+  if (target.id === "all-layers") {
+    arrayLayers.map((json) => {
+      checkedType(json, target.checked);
+    });
+  } else {
+    checkedType(target.id, target.checked);
   }
 
-  createCorner("top", "center");
-  createCorner("bottom", "center");
-  createCorner("vertical", "left");
-  createCorner("vertical", "right");
-})(map);
+  const checkedBoxes = document.querySelectorAll("input[name=item]:checked");
 
-// --------------------------------------------------------------
-const configs = [
-  { position: "topcenter", description: "top description" },
-  { position: "bottomcenter", description: "bottom description" },
-  { position: "verticalleft", description: "left description" },
-  { position: "verticalright", description: "right description" },
-];
+  document.querySelector("#all-layers").checked =
+    checkedBoxes.length - (document.querySelector("#all-layers").checked === true ? 1 : 0) < 3 ? false : true;
+}
 
-configs.forEach((item) => {
-  L.Control.Search = L.Control.extend({
-    options: {
-      position: item.position,
-    },
-    onAdd: function () {
-      const container = L.DomUtil.create("div", "description");
+function checkedType(id, type) {
+  map[type ? "addLayer" : "removeLayer"](window["layer_" + id]);
 
-      L.DomEvent.disableClickPropagation(container);
+  map.fitBounds(window[["layer_" + id]].getBounds(), { padding: [50, 50] });
 
-      container.insertAdjacentHTML("beforeend", item.description);
-
-      return container;
-    },
-  });
-
-  new L.Control.Search().addTo(map);
-});
+  document.querySelector(`#${id}`).checked = type;
+}
